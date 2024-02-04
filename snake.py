@@ -1,6 +1,10 @@
 from turtle import Turtle
 import time
 
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
 
 def create_turtle(pos_x, pos_y):
     turtle = Turtle()
@@ -14,7 +18,7 @@ def create_turtle(pos_x, pos_y):
 
 class Snake:
     turtles = []
-    direction = 0
+    direction = RIGHT
 
     def __init__(self):
         initial_positions = [(-40, 0), (-20, 0), (0, 0)]
@@ -28,13 +32,13 @@ class Snake:
         head_turtle_pos_x = head_turtle.position()[0]
         head_turtle_pos_y = head_turtle.position()[1]
 
-        if self.direction == 0:
+        if self.direction == RIGHT:
             head_turtle_pos_x += 20
-        elif self.direction == 90:
+        elif self.direction == UP:
             head_turtle_pos_y += 20
-        elif self.direction == 180:
+        elif self.direction == LEFT:
             head_turtle_pos_x -= 20
-        elif self.direction == 270:
+        elif self.direction == DOWN:
             head_turtle_pos_y -= 20
 
         for i in range(0, len(self.turtles) - 1):
@@ -45,4 +49,22 @@ class Snake:
         head_turtle.setx(head_turtle_pos_x)
         head_turtle.sety(head_turtle_pos_y)
 
-        time.sleep(0.2)
+        time.sleep(0.1)
+
+    def up(self):
+        if self.direction != DOWN:
+            self.direction = UP
+
+    def down(self):
+        if self.direction != UP:
+            self.direction = DOWN
+
+    def left(self):
+        if self.direction != RIGHT:
+            self.direction = LEFT
+
+    def right(self):
+        if self.direction != LEFT:
+            self.direction = RIGHT
+
+
