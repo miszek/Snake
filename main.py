@@ -26,7 +26,6 @@ while game_is_on:
 
     if snake.turtles[-1].distance(food) < 15:
         food.refresh()
-        scoreboard.score += 1
         scoreboard.increase_score()
 
 screen.exitonclick()
