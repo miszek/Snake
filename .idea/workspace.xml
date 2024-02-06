@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6925b83a-2656-4428-a826-955ab2fd5e48" name="Changes" comment="generating food with random position added">
-      <change afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="6925b83a-2656-4428-a826-955ab2fd5e48" name="Changes" comment="increasing score moved to scoreboard.py">
+      <change beforePath="$PROJECT_DIR$/scoreboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707254016735</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="scoreboard added">
+      <option name="closed" value="true" />
+      <created>1707256678167</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707256678167</updated>
+    </task>
+    <task id="LOCAL-00007" summary="increasing score moved to scoreboard.py">
+      <option name="closed" value="true" />
+      <created>1707256772684</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707256772684</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,6 +186,8 @@
     <MESSAGE value="3 square snake is moving forward in one direction" />
     <MESSAGE value="3 square snake is moving in desired direction, onkey listenig added" />
     <MESSAGE value="generating food with random position added" />
-    <option name="LAST_COMMIT_MESSAGE" value="generating food with random position added" />
+    <MESSAGE value="scoreboard added" />
+    <MESSAGE value="increasing score moved to scoreboard.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="increasing score moved to scoreboard.py" />
   </component>
 </project>
