@@ -24,8 +24,12 @@ while game_is_on:
     screen.update()
     snake.move()
 
-    if snake.turtles[-1].distance(food) < 15:
+    if snake.get_head().distance(food) < 15:
         food.refresh()
         scoreboard.increase_score()
+
+    if snake.is_collision():
+        scoreboard.game_over()
+        game_is_on = False
 
 screen.exitonclick()

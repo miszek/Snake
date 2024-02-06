@@ -6,6 +6,7 @@ DOWN = 270
 LEFT = 180
 RIGHT = 0
 
+
 def create_turtle(pos_x, pos_y):
     turtle = Turtle()
     turtle.penup()
@@ -67,4 +68,10 @@ class Snake:
         if self.direction != LEFT:
             self.direction = RIGHT
 
+    def get_head(self):
+        return self.turtles[-1]
 
+    def is_collision(self):
+        head = self.get_head()
+        if head.xcor() < -280 or head.xcor() > 280 or head.ycor() < -280 or head.ycor() > 280:
+            return True
