@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6925b83a-2656-4428-a826-955ab2fd5e48" name="Changes" comment="3 square snake is moving in desired direction, onkey listenig added">
-      <change afterPath="$PROJECT_DIR$/food.py" afterDir="false" />
+    <list default="true" id="6925b83a-2656-4428-a826-955ab2fd5e48" name="Changes" comment="generating food with random position added">
+      <change afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -22,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -127,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707084692345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="generating food with random position added">
+      <option name="closed" value="true" />
+      <created>1707254016735</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707254016735</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +171,7 @@
     <MESSAGE value="snake initial state, not moving, 3 squares" />
     <MESSAGE value="3 square snake is moving forward in one direction" />
     <MESSAGE value="3 square snake is moving in desired direction, onkey listenig added" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 square snake is moving in desired direction, onkey listenig added" />
+    <MESSAGE value="generating food with random position added" />
+    <option name="LAST_COMMIT_MESSAGE" value="generating food with random position added" />
   </component>
 </project>
