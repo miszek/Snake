@@ -20,6 +20,8 @@ def create_turtle(pos_x, pos_y):
 class Snake:
     turtles = []
     direction = RIGHT
+    tail_turtle_xcor = 0
+    tail_turtle_ycor = 0
 
     def __init__(self):
         initial_positions = [(-40, 0), (-20, 0), (0, 0)]
@@ -32,6 +34,9 @@ class Snake:
         head_turtle = self.turtles[len(self.turtles) - 1]
         head_turtle_pos_x = head_turtle.position()[0]
         head_turtle_pos_y = head_turtle.position()[1]
+
+        self.tail_turtle_xcor = self.turtles[0].position()[0]
+        self.tail_turtle_ycor = self.turtles[0].position()[1]
 
         if self.direction == RIGHT:
             head_turtle_pos_x += 20
@@ -75,3 +80,13 @@ class Snake:
         head = self.get_head()
         if head.xcor() < -280 or head.xcor() > 280 or head.ycor() < -280 or head.ycor() > 280:
             return True
+        # body = self.turtles[:-2]
+        # if head in body:
+        #     return True
+        for i in range(0, len(self.turtles) - 1):
+            if head.distance(self.turtles[i]) == 0:
+                return True
+
+    def extend(self):
+        new_turtle = create_turtle(self.tail_turtle_xcor, self.tail_turtle_ycor)
+        self.turtles.insert(0, new_turtle)
